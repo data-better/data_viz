@@ -3,6 +3,8 @@ title: "2장"
 output: html_document
 ---
 
+### RMarkdown Option
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.align = "center")
