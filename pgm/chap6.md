@@ -10,7 +10,7 @@ knitr::opts_chunk$set(warning = FALSE)
 knitr::opts_chunk$set(message = FALSE)
 ```
 
-## chapter 6
+#### 예 6-1
 
 ```{r}
 # install.packages('tm')
@@ -20,7 +20,6 @@ library(tm)
 library(SnowballC)
 library(wordcloud)
 ```
-
 
 ```{r}
 # 코퍼스 생성
@@ -67,9 +66,10 @@ wordcloud(mytext, scale=c(5,0.5), max.words=100, random.order=FALSE,
 
 ```
 
+#### 예 6-2
 
 ```{r}
-# KoNLP 
+# KoNLP 설치
 # 출처 : https://www.facebook.com/notes/r-korea-krugkorean-r-user-group/konlp-%EC%84%A4%EC%B9%98-%EC%9D%B4%EC%8A%88-%EA%B3%B5%EC%9C%A0/1847510068715020/
 
 install.packages("multilinguer")
@@ -112,6 +112,8 @@ wordfreq <- wordfreq[!(names(wordfreq) %in% c("등","한","이","개","들이","
 wordcloud(names(wordfreq), freq=wordfreq, max.words=50)
 ```
 
+#### 예 6-3
+
 ```{r}
 require(KoNLP)
 require(tm)
@@ -137,6 +139,8 @@ for(i in 1:4) {
 }
 
 ```
+
+#### 예 6-4
 
 ```{r}
 # install.packages(c("tm", "wordcloud", "twitteR", "KoNLP"))
