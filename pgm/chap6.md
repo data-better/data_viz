@@ -8,8 +8,6 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.align = "center")
 knitr::opts_chunk$set(warning = FALSE)
 knitr::opts_chunk$set(message = FALSE)
-#Sys.setenv(JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre')
-#dyn.load('/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/server/libjvm.dylib')
 ```
 
 ## chapter 6
@@ -71,7 +69,8 @@ wordcloud(mytext, scale=c(5,0.5), max.words=100, random.order=FALSE,
 
 
 ```{r}
-# https://www.facebook.com/notes/r-korea-krugkorean-r-user-group/konlp-%EC%84%A4%EC%B9%98-%EC%9D%B4%EC%8A%88-%EA%B3%B5%EC%9C%A0/1847510068715020/
+# KoNLP 
+# 출처 : https://www.facebook.com/notes/r-korea-krugkorean-r-user-group/konlp-%EC%84%A4%EC%B9%98-%EC%9D%B4%EC%8A%88-%EA%B3%B5%EC%9C%A0/1847510068715020/
 
 install.packages("multilinguer")
 # 이때 mac 사용자는 데스크탑 비밀번호를 물어봅니다. 입력해줘야 설치가 진행됩니다.
@@ -84,7 +83,8 @@ install.packages(c('stringr', 'hash', 'tau', 'Sejong', 'RSQLite', 'devtools'), t
 install.packages("remotes")
 # 64bit 에서만 동작합니다.
 remotes::install_github('haven-jeon/KoNLP', upgrade = "never", INSTALL_opts=c("--no-multiarch"))
-
+```
+```{r}
 library(tm)
 library(wordcloud)
 library(KoNLP)
