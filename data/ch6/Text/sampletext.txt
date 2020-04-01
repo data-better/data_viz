@@ -1,0 +1,13 @@
+Text mining, also known as text data mining or knowledge discovery from textual
+databases, refers to the process of extracting interesting and non-trivial patterns or
+knowledge from text documents. Regarded by many as the next wave of knowledge
+discovery, text mining has very high commercial values. Last count reveals that there are
+more than ten high-tech companies offering products for text mining. Has text mining
+evolved so rapidly to become a mature field? This article attempts to shed some lights to
+the question. We first present a text mining framework consisting of two components:
+Text refining that transforms unstructured text documents into an intermediate form; and
+knowledge distillation that deduces patterns or knowledge from the intermediate form.
+We then survey the state-of-the-art text mining products/applications and align them
+based on the text refining and knowledge distillation functions as well as the intermediate
+form that they adopt. In conclusion, we highlight the upcoming challenges of text mining
+and the opportunities it offers.
