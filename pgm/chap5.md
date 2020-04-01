@@ -84,7 +84,7 @@ qplot (long, lat, data = eastasia, geom = "polygon", fill=region, group= group)
 # 참고 https://mrkevinna.github.io/R-%EC%8B%9C%EA%B0%81%ED%99%94-3/
 library(ggmap)
 library(ggplot2)
-register_google(key = 'AIzaSyAhfey6gLzZpWGvEXIXSBHa6Qozstppjrk')
+register_google(key = 'Your API')
 
 # 도로지도 선택
 qmap('서울',   maptype = 'roadmap')
